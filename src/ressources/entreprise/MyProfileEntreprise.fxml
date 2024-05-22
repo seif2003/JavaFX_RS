@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.entreprise.MyProfileCompany">
+   <children>
+      <Pane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: D9D9D9;">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="1920.0" style="-fx-pref-height: 100; -fx-background-color: FFFFFF;">
+               <children>
+                  <ImageView fitHeight="79.0" fitWidth="107.0" style="-fx-translate-y: 10; -fx-translate-x: 48;">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="list_of_offers" contentDisplay="CENTER" style="-fx-font-family: Inter; -fx-font-size: 28; -fx-font-weight: 500; -fx-translate-x: 320; -fx-translate-y: 30;" text="List of offers" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="System Bold" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="create_offer" style="-fx-translate-x: 420; -fx-translate-y: 30; -fx-font-family: Inter; -fx-font-weight: 500; -fx-font-size: 28;" text="Create offer" />
+                  <Label fx:id="offerAccepted" style="-fx-translate-x: 520; -fx-translate-y: 30; -fx-font-family: Inter; -fx-font-weight: 500; -fx-font-size: 28;" text="Candidats Accepted" />
+                  <Pane fx:id="logoutPane" prefHeight="100.0" prefWidth="174.0" style="-fx-translate-x: 1050;">
+                     <children>
+                        <Label style="-fx-translate-x: 0; -fx-translate-y: 30; -fx-font-family: Inter; -fx-font-weight: 500; -fx-font-size: 28;" text="Logout" />
+                        <ImageView layoutX="-1099.0" layoutY="-2.0" style="-fx-translate-x: 1220; -fx-translate-y: 35;">
+                           <image>
+                              <Image url="@../images/logout.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label fx:id="Myprofile" style="-fx-translate-x: 480; -fx-translate-y: 30; -fx-font-family: Inter; -fx-font-weight: 500; -fx-font-size: 28;" text="My profile" textFill="#f5ca23" />
+               </children>
+            </HBox>
+            <Pane layoutX="8.0" layoutY="50.0" prefHeight="780.0" prefWidth="1750.0" style="-fx-background-color: FFFFFF; -fx-translate-x: 60; -fx-translate-y: 140; -fx-background-radius: 20;">
+               <children>
+                  <Pane layoutX="934.0" layoutY="253.0" prefHeight="150.0" prefWidth="210.0" style="-fx-background-color: #F3F3F3;" />
+                  <VBox fillWidth="false" layoutX="78.0" layoutY="415.0" style="-fx-spacing: 5;">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+                  <Button id="login" fx:id="save" layoutX="620.0" layoutY="601.0" mnemonicParsing="false" onAction="#save" prefHeight="31.0" prefWidth="463.0" style="-fx-background-color: F5CA23; -fx-background-radius: 49;" text="Save">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Label contentDisplay="CENTER" layoutX="78.0" layoutY="24.0" prefHeight="72.0" prefWidth="199.0" style="-fx-font-family: Inter; -fx-font-size: 28; -fx-font-weight: 500;" text="My account" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="78.0" layoutY="105.0" prefHeight="126.0" prefWidth="510.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <VBox prefHeight="126.0" prefWidth="510.0">
+                           <children>
+                              <Label prefHeight="39.0" prefWidth="614.0" text="Name">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="email" fx:id="Name" prefHeight="60.0" prefWidth="86.0" style="-fx-background-color: #F3F3F3; -fx-background-radius: 15;">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets left="50.0" right="50.0" />
+                                 </opaqueInsets>
+                              </TextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="78.0" layoutY="223.0" prefHeight="126.0" prefWidth="510.0">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="614.0" text="Phone">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField id="email" fx:id="phone" prefHeight="60.0" prefWidth="86.0" style="-fx-background-color: #F3F3F3; -fx-background-radius: 15;">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets left="50.0" right="50.0" />
+                           </opaqueInsets>
+                        </TextField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox layoutX="934.0" layoutY="122.0" prefHeight="92.0" prefWidth="510.0">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="614.0" text="Password">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="changePasswordButton" onAction="#changePassword" prefHeight="39.0" prefWidth="513.0" style="-fx-background-color: F5CA23; -fx-background-radius: 49;" text="Change Password">
+					    <font>
+					        <Font name="System Bold" size="18.0" />
+					    </font>
+					</Button>
+
+
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox layoutX="1197.0" layoutY="253.0" prefHeight="92.0" prefWidth="247.0">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="614.0" text="Logo">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button id="login" fx:id="logobutton" mnemonicParsing="false" onAction="#uploadLogo" prefHeight="39.0" prefWidth="513.0" style="-fx-background-color: F5CA23; -fx-background-radius: 49;" text="Upload Logo">
+      						    <font>
+      						        <Font name="System Bold" size="18.0" />
+      						    </font>
+      						</Button>
+                        <Button id="login" fx:id="deleteLogo" mnemonicParsing="false" onAction="#deleteLogo" prefHeight="39.0" prefWidth="513.0" style="-fx-background-color: #DC3545; -fx-background-radius: 49;" text="Delete Logo" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Button>
+
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox layoutX="78.0" layoutY="349.0" prefHeight="126.0" prefWidth="510.0">
+                     <children>
+                        <Label fx:id="location1" prefHeight="39.0" prefWidth="614.0" text="Location">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField id="email" fx:id="location" prefHeight="60.0" prefWidth="86.0" style="-fx-background-color: #F3F3F3; -fx-background-radius: 15;">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets left="50.0" right="50.0" />
+                           </opaqueInsets>
+                        </TextField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <ImageView fx:id="image" fitHeight="150.0" fitWidth="210.0" layoutX="934.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

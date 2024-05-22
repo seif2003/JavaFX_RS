@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OfferDetailsController">
+    <children>
+        <Pane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: D9D9D9;">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="1920.0" style="-fx-background-color: FFFFFF;">
+                    <children>
+                        <ImageView fitHeight="79.0" fitWidth="107.0" style="-fx-translate-y: 10; -fx-translate-x: 48;">
+                            <image>
+                                <Image url="@../../../../../Downloads/Richard_Sanchez__1_-removebg-preview%201.png" />
+                            </image>
+                        </ImageView>
+                        <Label contentDisplay="CENTER" style="-fx-font-family: Inter; -fx-font-size: 28; -fx-font-weight: 500; -fx-translate-x: 600; -fx-translate-y: 30;" text="List of offers" textOverrun="LEADING_ELLIPSIS">
+                            <font>
+                                <Font size="35.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="create_offer" style="-fx-translate-x: 820; -fx-translate-y: 30; -fx-font-family: Inter; -fx-font-weight: 500; -fx-font-size: 28;" text="Create Offer" />
+                        <Label fx:id="list_of_offers" layoutX="270.0" layoutY="10.0" style="-fx-translate-x: 1320; -fx-translate-y: 30; -fx-font-family: Inter; -fx-font-weight: 500; -fx-font-size: 28;" text="Logout" />
+                        <ImageView style="-fx-translate-x: 1350; -fx-translate-y: 35;">
+                            <image>
+                                <Image url="@../../../../../Downloads/logout-svgrepo-com%201.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <Pane prefHeight="900.0" prefWidth="1800.0" style="-fx-background-color: FFFFFF; -fx-translate-x: 60; -fx-translate-y: 140; -fx-background-radius: 20;">
+                    <children>
+                        <VBox layoutX="752.0" layoutY="19.0" />
+                        <Pane fx:id="description" prefHeight="200.0" prefWidth="1600.0" style="-fx-translate-y: 160; -fx-translate-x: 100; -fx-background-color: F3F3F3; -fx-border-radius: 15;">
+                            <children>
+                                <TextFlow fx:id="descriptionTextFlow" layoutX="14.0" layoutY="16.0" prefHeight="164.0" prefWidth="1570.0" />
+                            </children>
+                        </Pane>
+                        <Label fx:id="jobTitleLabel" layoutX="684.0" layoutY="49.0" prefHeight="70.0" prefWidth="470.0" style="-fx-font-family: Inter; -fx-font-size: 48; -fx-font-weight: 700;" textAlignment="CENTER" />
+                        <Label fx:id="dateLabel" layoutX="1449.0" layoutY="11.0" prefHeight="70.0" prefWidth="330.0" style="-fx-font-family: Inter; -fx-font-size: 24; -fx-font-weight: 400;" />
+                  <VBox layoutX="100.0" layoutY="413.0" prefHeight="300.0" prefWidth="1119.0">
+                     <children>
+                        <HBox prefHeight="69.0" prefWidth="1119.0">
+                           <children>
+                              <Label prefHeight="75.0" prefWidth="312.0" text="Name     :">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="nameLabel" prefHeight="75.0" prefWidth="898.0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="1119.0">
+                           <children>
+                              <Label prefHeight="75.0" prefWidth="312.0" text="email      :">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="emailLabel" prefHeight="75.0" prefWidth="898.0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="1119.0">
+                           <children>
+                              <Label prefHeight="75.0" prefWidth="312.0" text="phone    :">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="phoneLabel" prefHeight="75.0" prefWidth="898.0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="1119.0">
+                           <children>
+                              <Label prefHeight="75.0" prefWidth="312.0" text="location :">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="locationLabel" prefHeight="75.0" prefWidth="898.0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <ImageView fx:id="back" fitHeight="73.0" fitWidth="114.0" layoutX="100.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/back.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+.custom-button {
+    -fx-background-color: #e74c3c; /* Couleur de fond */
+    -fx-text-fill: white; /* Couleur du texte */
+}
+
+.custom-button:hover {
+    -fx-background-color: #c0392b; /* Couleur de fond au survol */
+}
+
+.custom-button:pressed {
+    -fx-background-color: #d35400; /* Couleur de fond lorsque le bouton est pressé */
+}

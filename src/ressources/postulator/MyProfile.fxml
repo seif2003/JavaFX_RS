@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.postulator.MyProfileController">
+    <children>
+        <Pane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: D9D9D9;">
+            <children>
+            <HBox prefHeight="100.0" prefWidth="1920.0" style="-fx-pref-height: 100; -fx-background-color: FFFFFF;">
+               <children>
+                  <ImageView fitHeight="79.0" fitWidth="107.0" style="-fx-translate-y: 10; -fx-translate-x: 48;">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="listOfOffers" contentDisplay="CENTER" style="-fx-font-family: Inter; -fx-font-size: 28; -fx-font-weight: 500; -fx-translate-x: 500; -fx-translate-y: 30;" text="List of offers" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="myOffers" style="-fx-translate-x: 620; -fx-translate-y: 30; -fx-font-family: Inter; -fx-font-weight: 500; -fx-font-size: 28;" text="My offers" />
+                  <Label fx:id="myProfile" style="-fx-translate-x: 760; -fx-translate-y: 30; -fx-font-family: Inter; -fx-font-weight: 500; -fx-font-size: 28;" text="My profile" textFill="#f5ca23">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Pane fx:id="logoutPane" prefHeight="100.0" prefWidth="174.0" style="-fx-translate-x: 1150;">
+                     <children>
+                        <Label style="-fx-translate-x: 0; -fx-translate-y: 30; -fx-font-family: Inter; -fx-font-weight: 500; -fx-font-size: 28;" text="Logout" />
+                        <ImageView layoutX="-1099.0" layoutY="-2.0" style="-fx-translate-x: 1220; -fx-translate-y: 35;">
+                           <image>
+                              <Image url="@../images/logout.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+                <Pane prefHeight="900.0" prefWidth="1800.0" style="-fx-background-color: FFFFFF; -fx-translate-x: 60; -fx-translate-y: 140; -fx-background-radius: 20;">
+               <children>
+                  <VBox fillWidth="false" layoutX="78.0" layoutY="415.0" style="-fx-spacing: 5;">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="72.0" prefWidth="199.0" style="-fx-font-family: Inter; -fx-font-size: 28; -fx-font-weight: 500;" text="Skills" textOverrun="LEADING_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="215.0" prefWidth="1645.0">
+                           <children>
+                              <VBox prefHeight="215.0" prefWidth="310.0" style="-fx-spacing: 20;">
+                                 <children>
+                                    <CheckBox fx:id="Communication" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Communication">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="ComputerSkills" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Computer Skills">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="ProblemSolving" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Problem Solving">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="Leadership" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Leadership">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="TimeManagement" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Time Management">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="215.0" prefWidth="310.0" style="-fx-spacing: 20;">
+                                 <children>
+                                    <CheckBox fx:id="Teamwork" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Teamwork">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="ProjectManagement" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Project Management">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="DataAnalysis" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Data Analysis">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="Adaptability" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Adaptability">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="CreativityAndInnovation" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Creativity and Innovation">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="215.0" prefWidth="310.0" style="-fx-spacing: 20;">
+                                 <children>
+                                    <CheckBox fx:id="CustomerService" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Customer Service">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="Negotiation" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Negotiation">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="Autonomy" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Autonomy">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="ChangeManagement" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Change Management">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="InterpersonalSkills" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Interpersonal Skills">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="215.0" prefWidth="310.0" style="-fx-spacing: 20;">
+                                 <children>
+                                    <CheckBox fx:id="CriticalThinking" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Critical Thinking">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="UIUXDesign" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="UI/UX Design">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="TechnicalWriting" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Technical Writing">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="AgileProjectManagement" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Agile Project Management">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="SEOSEMSkills" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="SEO/SEM Skills">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="215.0" prefWidth="310.0" style="-fx-spacing: 20;">
+                                 <children>
+                                    <CheckBox fx:id="GraphicDesign" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Graphic Design">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="ProgrammingSkills" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Programming Skills">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="SocialMediaManagement" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Social Media Management">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="ForeignLanguageProficiency" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Foreign Language Proficiency">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="DatabaseDesign" mnemonicParsing="false" prefHeight="55.0" prefWidth="287.0" text="Database Design">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+                  <Button id="login" fx:id="save" layoutX="669.0" layoutY="797.0" mnemonicParsing="false" onAction="#save" prefHeight="31.0" prefWidth="463.0" style="-fx-background-color: F5CA23; -fx-background-radius: 49;" text="Save">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Label contentDisplay="CENTER" layoutX="78.0" layoutY="24.0" prefHeight="72.0" prefWidth="199.0" style="-fx-font-family: Inter; -fx-font-size: 28; -fx-font-weight: 500;" text="My account" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="78.0" layoutY="105.0" prefHeight="126.0" prefWidth="510.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <VBox prefHeight="126.0" prefWidth="510.0">
+                           <children>
+                              <Label prefHeight="39.0" prefWidth="614.0" text="Full Name">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="email" fx:id="fullName" prefHeight="60.0" prefWidth="86.0" style="-fx-background-color: #F3F3F3; -fx-background-radius: 15;">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets left="50.0" right="50.0" />
+                                 </opaqueInsets>
+                              </TextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="78.0" layoutY="223.0" prefHeight="126.0" prefWidth="510.0">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="614.0" text="Phone">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField id="email" fx:id="phone" prefHeight="60.0" prefWidth="86.0" style="-fx-background-color: #F3F3F3; -fx-background-radius: 15;">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets left="50.0" right="50.0" />
+                           </opaqueInsets>
+                        </TextField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox layoutX="934.0" layoutY="122.0" prefHeight="92.0" prefWidth="510.0">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="614.0" text="Password">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button id="login" mnemonicParsing="false" onAction="#changePassword" prefHeight="39.0" prefWidth="513.0" style="-fx-background-color: F5CA23; -fx-background-radius: 49;" text="Change password">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox layoutX="934.0" layoutY="257.0" prefHeight="92.0" prefWidth="510.0">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="614.0" text="Resume">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button id="login" fx:id="resumeButton" mnemonicParsing="false" onAction="#uploadResume" prefHeight="39.0" prefWidth="513.0" style="-fx-background-color: F5CA23; -fx-background-radius: 49;" text="Upload Resume">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </children></Pane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

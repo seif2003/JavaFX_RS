@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.postulator.MyOffersController">
+    <children>
+        <Pane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: D9D9D9;">
+            <children>
+            <HBox prefHeight="100.0" prefWidth="1920.0" style="-fx-pref-height: 100; -fx-background-color: FFFFFF;">
+               <children>
+                  <ImageView fitHeight="79.0" fitWidth="107.0" style="-fx-translate-y: 10; -fx-translate-x: 48;">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="listOfOffers" contentDisplay="CENTER" style="-fx-font-family: Inter; -fx-font-size: 28; -fx-font-weight: 500; -fx-translate-x: 500; -fx-translate-y: 30;" text="List of offers" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="myOffers" style="-fx-translate-x: 620; -fx-translate-y: 30; -fx-font-family: Inter; -fx-font-weight: 500; -fx-font-size: 28;" text="My offers" textFill="#f5ca23">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="myProfile" style="-fx-translate-x: 760; -fx-translate-y: 30; -fx-font-family: Inter; -fx-font-weight: 500; -fx-font-size: 28;" text="My profile" />
+                  <Pane fx:id="logoutPane" prefHeight="100.0" prefWidth="174.0" style="-fx-translate-x: 1150;">
+                     <children>
+                        <Label style="-fx-translate-x: 0; -fx-translate-y: 30; -fx-font-family: Inter; -fx-font-weight: 500; -fx-font-size: 28;" text="Logout" />
+                        <ImageView layoutX="-1099.0" layoutY="-2.0" style="-fx-translate-x: 1220; -fx-translate-y: 35;">
+                           <image>
+                              <Image url="@../images/logout.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+                <Pane prefHeight="900.0" prefWidth="1800.0" style="-fx-background-color: FFFFFF; -fx-translate-x: 60; -fx-translate-y: 140; -fx-background-radius: 20;">
+               <children>
+                  <TableView fx:id="refusedTable" layoutX="44.0" layoutY="1.0" prefHeight="700.0" prefWidth="400.0" style="-fx-translate-x: 100; -fx-translate-y: 140; -fx-hgap: 3; -fx-vgap: 3; -fx-padding: 3; -fx-font-size: 24; -fx-font-family: Segoe UI Semibold; -fx-text-fill: white; -fx-background-color: transparent; -fx-border-width: 0 0 1 0; -fx-background-color: #ff9d80;">
+                     <columns>
+                        <TableColumn fx:id="refusedJobTitleColumn" prefWidth="390.0" text="Refused" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="791.0" layoutY="40.0" style="-fx-font-family: Inter; -fx-font-size: 48; -fx-font-weight: 700;" text="My offers" />
+                  <TableView fx:id="notProcessedTable" layoutX="600.0" layoutY="1.0" prefHeight="700.0" prefWidth="400.0" style="-fx-translate-x: 100; -fx-translate-y: 140; -fx-hgap: 3; -fx-vgap: 3; -fx-padding: 3; -fx-font-size: 24; -fx-font-family: Segoe UI Semibold; -fx-text-fill: white; -fx-background-color: transparent; -fx-border-width: 0 0 1 0; -fx-background-color: #fffb80;">
+                     <columns>
+                        <TableColumn fx:id="notProcessedJobTitleColumn" prefWidth="390.0" text="Not processed" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="acceptedTable" layoutX="1139.0" layoutY="1.0" prefHeight="700.0" prefWidth="400.0" style="-fx-translate-x: 100; -fx-translate-y: 140; -fx-hgap: 3; -fx-vgap: 3; -fx-padding: 3; -fx-font-size: 24; -fx-font-family: Segoe UI Semibold; -fx-text-fill: white; -fx-background-color: transparent; -fx-border-width: 0 0 1 0; -fx-background-color: #a2ff80;">
+                     <columns>
+                        <TableColumn fx:id="acceptedJobTitleColumn" prefWidth="390.0" text="Accepted" />
+                     </columns>
+                  </TableView>
+               </children></Pane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
